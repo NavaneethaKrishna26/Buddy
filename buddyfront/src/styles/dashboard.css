@@ -1,0 +1,118 @@
+.container {
+  display: flex;
+  justify-content:center;
+  padding: 10px;
+  gap: 50px;
+  height: 400px;
+  align-items: center;
+  margin-top: 0px;
+}
+
+.left-section {
+  display: flex;
+  flex-direction: column;
+  gap: 1px;
+  height: 400px;
+  justify-content:center;
+  width: 500px;
+}
+
+.div1 {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 30px;
+  color: #5a2e8a;
+  animation: bounce 1.5s infinite;
+}
+
+@keyframes bounce {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-8px);
+  }
+}
+
+.div3 {
+  padding: 10px;
+  border-radius: 10px;
+  width: 250px;
+  height: 100px;
+  background: linear-gradient(
+    135deg,
+    rgba(255, 255, 255, 0.25) 0%,
+    rgba(255, 255, 255, 0.05) 100%
+  );
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+  font-family: 'Poppins', sans-serif;
+  font-size: 14px;
+  color: #333;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  line-height: 1.4;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.div3:hover {
+  transform: scale(1.05);
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.3);
+}
+
+.right-section {
+   height: 480px;
+  width: 300px;
+  padding: 20px;
+  border-radius: 15px;
+
+  background: rgba(245, 245, 245, 0.2); /* semi-transparent light background */
+  backdrop-filter: blur(15px);
+  -webkit-backdrop-filter: blur(15px);
+
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  color: #333;
+}
+.right-section .quick{
+    margin-bottom: 1px;
+}
+
+.right-section h3 {
+  text-align: center;
+  margin-bottom: 15px;
+
+}
+
+.stat {
+  background-color: #d1a7f4;
+  padding: 10px;
+  margin: 10px 0;
+  height: 110px;
+  border-radius: 10px;
+  text-align: center;
+  font-size: 16px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+}
+
+
+.box{
+    width: 150px;
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}

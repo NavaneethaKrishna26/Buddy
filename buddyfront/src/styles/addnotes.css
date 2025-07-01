@@ -1,0 +1,97 @@
+body {
+  background-color: #f0f0f0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+.notes-container {
+    width: 40%;
+  margin: 5% auto;
+  background: rgba(255, 255, 255, 0.2); /* semi-transparent white */
+  padding: 40px 30px;
+  border-radius: 30px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  align-items: center;
+
+  /* Glass effect */
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+.notes-container h2 {
+  color: #333;
+  font-size: 28px;
+  margin-bottom: 20px;
+}
+
+.inputs {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 15px;
+  width: 100%;
+}
+
+
+.input-field,
+.input-area {
+  width: 100%;
+  width:328px;
+  background: rgba(204, 169, 219, 0.4); /* lighter semi-transparent */
+  border: 1px solid rgba(255, 255, 255, 0.4);
+  border-radius: 5px;
+  padding: 8px 12px;
+  font-size: 16px;
+  color: #333;
+  
+  /* subtle shadow for depth */
+  box-shadow: inset 0 2px 6px rgba(255, 255, 255, 0.3);
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
+}
+
+.input-field::placeholder,
+.input-area::placeholder {
+  color: #666;
+}
+
+.input-area {
+  height: 100px;
+  resize: vertical;
+}
+
+.buttons {
+  width: 100%;
+  max-width: 300px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+
+.btn {
+  width: 45%;
+  height: 40px;
+  background: rgba(252, 232, 106, 0.8); /* semi-transparent yellow */
+  border: none;
+  border-radius: 5px;
+  color: #333;
+  font-weight: bold;
+  font-size: 16px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 2px 6px rgba(255, 255, 255, 0.5);
+  backdrop-filter: blur(3px);
+  -webkit-backdrop-filter: blur(3px);
+}
+
+.btn:hover {
+  background: rgba(252, 211, 77, 0.9);
+  transform: translateY(-2px);
+  box-shadow: 0 6px 15px rgba(0,0,0,0.2);
+}

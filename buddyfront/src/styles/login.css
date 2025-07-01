@@ -1,0 +1,72 @@
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.buddy-logo {
+  width: 600px;
+  max-width: 90%;
+}
+
+.login-box {
+  background-color: rgba(214, 169, 227, 0.3); /* same color, but translucent */
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px); /* for Safari */
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  box-shadow: 0 8px 32px rgba(31, 38, 135, 0.37);
+  padding: 30px;
+  border-radius: 15px;
+  text-align: center;
+  width: 300px;
+  height: 340px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+.login-box h2 {
+  margin-bottom: 20px;
+  color: #1e1e1e;
+}
+
+.input {
+  width: 250px;
+  padding: 10px;
+  margin-bottom: 15px;
+  border: none;
+  border-radius: 10px;
+  background-color: #ffe873;
+  color: #000;
+}
+
+.submit-btn {
+  padding: 10px 20px;
+  background-color: #ffe873;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+/* Signup text below the button */
+.signup-text {
+  margin-top: 15px;
+  font-size: 14px;
+  color: #333;
+}
+
+.signup-link {
+  color: #5a2e8a;
+  font-weight: 600;
+  text-decoration: none;
+  cursor: pointer;
+  transition: color 0.3s ease;
+}
+
+.signup-link:hover {
+  color: #7a52c7;
+  text-decoration: underline;
+}

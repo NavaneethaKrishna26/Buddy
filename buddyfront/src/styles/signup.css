@@ -1,0 +1,87 @@
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.buddy-logo {
+  width: 600px;
+  max-width: 90%;
+}
+
+.login-box {
+  background-color: #d6a9e3;
+  padding: 30px;
+  border-radius: 15px;
+  text-align: center;
+  width: 300px;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 12px;
+  position: relative;
+}
+
+.login-box h2 {
+  margin-bottom: 20px;
+  color: #1e1e1e;
+}
+
+.input {
+  width: 250px;
+  padding: 10px;
+  margin-bottom: 12px;
+  border: none;
+  border-radius: 10px;
+  background-color: #ffe873;
+  color: #000;
+  font-size: 14px;
+}
+.input::placeholder {
+  color: #b39ddb;         /* soft purple shade */
+     /* subtle italic for elegance */
+  opacity: 0.8;           /* a little transparency */
+  transition: color 0.3s ease;
+}
+
+.input:focus::placeholder {
+  color: #7a52c7;         /* deepen color on focus for emphasis */
+  opacity: 1;
+}
+.submit-btn {
+  padding: 10px 20px;
+  background-color: #ffe873;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  font-weight: bold;
+  font-size: 15px;
+  transition: background-color 0.3s ease;
+}
+
+.submit-btn:hover {
+  background-color: #f7d54c;
+}
+
+/* Login text below the button */
+.login-text {
+  margin-top: 15px;
+  font-size: 14px;
+  color: #333;
+}
+
+.login-link {
+  color: #5a2e8a;
+  font-weight: 600;
+  text-decoration: none;
+  cursor: pointer;
+  transition: color 0.3s ease;
+}
+
+.login-link:hover {
+  color: #7a52c7;
+  text-decoration: underline;
+}

@@ -1,0 +1,89 @@
+.goal-container {
+  width: 40%;
+  margin: 5% auto;
+  background: rgba(255, 255, 255, 0.2); /* transparent white */
+  padding: 40px 30px;
+  border-radius: 30px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+  
+  /* Glass effect */
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+  align-items: center;
+}
+
+.head h2 {
+  color: #3c1e6e; /* deep purple for contrast */
+  font-size: 28px;
+  margin: 0;
+  font-weight: 700;
+  text-shadow: 0 1px 3px rgba(255, 255, 255, 0.7); /* subtle glow */
+}
+
+.inputs {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 18px;
+  width: 100%;
+}
+
+.input-field {
+  width: 100%;
+  max-width: 320px;
+  background: rgba(213, 182, 229, 0.3); /* translucent lavender */
+  border: 1px solid rgba(146, 89, 214, 0.6);
+  border-radius: 6px;
+  padding: 10px 15px;
+  font-size: 16px;
+  color: #3c1e6e;
+  transition: border-color 0.3s ease, background 0.3s ease;
+  backdrop-filter: blur(6px);
+  -webkit-backdrop-filter: blur(6px);
+}
+
+.input-field::placeholder {
+  color: #9b7bcc; /* lighter lavender */
+}
+
+.input-field:focus {
+  outline: none;
+  border-color: #9259d6;
+  background: rgba(255, 255, 255, 0.5);
+  box-shadow: 0 0 6px #a074d8;
+}
+
+.buttons {
+  width: 100%;
+  max-width: 320px;
+  display: flex;
+  justify-content: space-between;
+  margin-top: 10px;
+}
+
+.btn {
+  width: 48%;
+  height: 42px;
+  background: rgba(214, 174, 234, 0.4); /* translucent purple */
+  border: 1px solid rgba(198, 136, 224, 0.6);
+  border-radius: 6px;
+  color: #3c1e6e;
+  font-weight: 700;
+  font-size: 16px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+  box-shadow: 0 4px 10px rgba(131, 82, 204, 0.25);
+}
+
+.btn:hover {
+  background: rgba(184, 117, 214, 0.6);
+  transform: translateY(-3px);
+  box-shadow: 0 7px 15px rgba(131, 82, 204, 0.5);
+}

@@ -1,0 +1,185 @@
+body {
+  background-color: #f0f0f0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+.notescontainer {
+  width: 70%;
+  margin-left: 15%;
+  margin-right: 15%;
+  margin-top: 40px;
+  background: rgba(217, 217, 217, 0.2); /* translucent */
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 30px;
+  border-radius: 40px;
+   box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+  backdrop-filter: blur(6px); /* subtle blur behind container */
+  -webkit-backdrop-filter: blur(6px);
+}
+
+.top {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+.bottom {
+    width: 600px;
+  background: rgba(240, 240, 240, 0.1); /* semi-transparent */
+  backdrop-filter: blur(1px);
+  -webkit-backdrop-filter: blur(100px);
+  
+  border-radius: 10px; /* optional for softer edges */
+  padding: 15px;
+}
+
+.plus {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-right: 60px;
+  margin-top: 40px;
+  background: rgba(252, 232, 106, 0.8); /* translucent yellow */
+  border-radius: 50%;
+  height: 50px;
+  width: 50px;
+  font-size: 24px;
+  font-weight: bold;
+  color: #333;
+  text-decoration: none;
+  transition: all 0.3s ease;
+  cursor: pointer;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+  backdrop-filter: blur(4px);
+  -webkit-backdrop-filter: blur(4px);
+}
+
+.plus:hover {
+  background: rgba(252, 211, 77, 0.9);
+  transform: scale(1.1);
+}
+
+.tasks-header {
+  width: 397px;
+  height: 92px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 20px auto;
+  border-radius: 8px;
+  text-align: center;
+}
+
+.tasks-header h1 {
+  font-weight: bold;
+  font-size: 28px;
+  color: #333;
+  margin: 0;
+}
+
+.tasks-header p {
+  font-size: 16px;
+  margin: 5px 0 0 0;
+  color: #555;
+}
+
+.note-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+  gap: 40px;
+  width: 100%;
+  margin-top: 20px;
+}
+
+.note {
+  background-color: rgba(210, 153, 235, 0.8); /* translucent purple */
+  padding: 15px;
+  height: auto;                /* let height grow with content */
+  max-height: 150px;           /* initial max height */
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  transition: all 0.4s ease;
+  overflow: hidden;
+  cursor: pointer;
+  backdrop-filter: blur(4px);
+  -webkit-backdrop-filter: blur(4px);
+}
+
+.note:hover {
+  background-color: rgba(182, 132, 199, 0.9);
+  transform: scale(1.05);
+  box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+  max-height: 600px; /* big enough to show full content */
+}
+
+.para p {
+  display: -webkit-box;
+  -webkit-line-clamp: 2;       /* limit lines initially */
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  font-size: 14px;
+  color: #333;
+  line-height: 1.4em;
+  transition: all 0.4s ease;
+  max-height: 3em;             /* roughly 2 lines */
+}
+
+.note:hover .para p {
+  -webkit-line-clamp: unset;   /* remove clamp */
+  max-height: none;
+  overflow: visible;
+  text-overflow: unset;
+  display: block;
+}
+
+.title {
+  font-weight: bold;
+  font-size: 16px;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+.action-buttons {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 10px;
+}
+
+.action-buttons button {
+  border: none;
+  padding: 6px 12px;
+  cursor: pointer;
+  font-size: 12px;
+  border-radius: 4px;
+  background: rgba(252, 232, 106, 0.8); /* translucent yellow */
+  color: #333;
+  font-weight: bold;
+  transition: all 0.3s ease;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  backdrop-filter: blur(3px);
+  -webkit-backdrop-filter: blur(3px);
+}
+
+.action-buttons button:hover {
+  background-color: rgba(252, 211, 77, 0.9);
+  transform: scale(1.05);
+}
+
+.shownote {
+  text-decoration: none;
+  color: #333;
+}

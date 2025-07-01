@@ -1,0 +1,129 @@
+.ask-buddy-container {
+  max-width: 800px;
+  margin: 30px auto;
+  padding: 20px;
+  background: rgba(255, 255, 255, 0.3);
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+  border-radius: 30px;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+  display: flex;
+  flex-direction: column;
+}
+
+.ask-buddy-header {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.ask-buddy-icon {
+  width: 60px;
+  height: 40px;
+}
+
+.ask-buddy-title {
+  font-size: 28px;
+  font-weight: 600;
+  color: #4E9CFF;
+}
+
+.ask-buddy-subtext {
+  margin-top: 5px;
+  color: #555;
+  font-size: 16px;
+}
+
+.ask-buddy-chat {
+  margin-top: 30px;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  max-height: 400px;
+  overflow-y: auto;
+  padding-right: 10px;
+}
+
+.chat-bubble {
+  display: flex;
+  gap: 10px;
+  align-items: flex-start;
+}
+
+.chat-bubble.user .message-content {
+  background-color: rgba(230, 242, 255, 0.5);
+  color: #333;
+  backdrop-filter: blur(4px);
+  -webkit-backdrop-filter: blur(4px);
+}
+
+.chat-bubble.bot .message-content {
+  background-color: rgba(241, 240, 240, 0.5);
+  color: #222;
+  backdrop-filter: blur(4px);
+  -webkit-backdrop-filter: blur(4px);
+}
+
+.avatar {
+  width: 60px;
+  height: 40px;
+  border-radius: 50%;
+}
+
+.message-content {
+  padding: 10px 15px;
+  border-radius: 10px;
+  max-width: 600px;
+  font-size: 16px;
+  position: relative;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.timestamp {
+  display: block;
+  font-size: 12px;
+  color: #999;
+  margin-top: 5px;
+}
+
+.ask-buddy-input-area {
+  display: flex;
+  gap: 10px;
+  margin-top: 30px;
+}
+
+.ask-buddy-textarea {
+  flex: 1;
+  height: 50px;
+  padding: 10px;
+  border-radius: 8px;
+  border: 1px solid rgba(204, 204, 204, 0.5);
+  background-color: rgba(255, 255, 255, 0.3);
+  backdrop-filter: blur(4px);
+  -webkit-backdrop-filter: blur(4px);
+  resize: vertical;
+  font-size: 16px;
+  color: #333;
+}
+
+.ask-buddy-textarea::placeholder {
+  color: rgba(85, 85, 85, 0.6);
+}
+
+.ask-buddy-send-btn {
+  background-color: rgba(204, 169, 219, 0.7);
+  color: #fff;
+  border: none;
+  padding: 12px 20px;
+  border-radius: 8px;
+  font-size: 16px;
+  cursor: pointer;
+  display: flex;
+  gap: 8px;
+  align-items: center;
+  transition: background-color 0.3s ease;
+}
+
+.ask-buddy-send-btn:hover {
+  background-color: rgba(59, 127, 217, 0.8);
+}

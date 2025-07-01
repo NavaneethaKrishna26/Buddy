@@ -1,0 +1,131 @@
+.goals-container {
+  background-color: rgba(211, 211, 211, 0.3);
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+  padding: 40px 30px;
+  border-radius: 30px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+  width: 70%;
+  margin: 30px auto;
+  height: auto;
+}
+
+.goals-header {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 30px;
+}
+
+.goals-header .plus {
+  position: absolute;
+  right: 0;
+  font-size: 28px;
+  font-weight: bold;
+  text-decoration: none;
+  color: #333;
+}
+
+.title {
+  font-weight: bold;
+  font-size: 28px;
+  color: #333;
+}
+
+.goal-table {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.goal-row {
+  display: grid;
+  grid-template-columns: 2fr 1fr 1fr;
+  gap: 20px;
+  width: auto;
+  align-items: center;
+  padding: 12px 20px;
+  border-radius: 8px;
+  background-color: rgba(255, 255, 255, 0.15);
+  backdrop-filter: blur(4px);
+  -webkit-backdrop-filter: blur(4px);
+  transition: background 0.3s ease, box-shadow 0.3s ease, transform 0.3s ease;
+}
+
+.goal-row.header {
+  background: transparent;
+  box-shadow: none;
+  padding: 0 20px;
+}
+
+.goal-row.header > div {
+  font-weight: 700;
+  font-size: 16px;
+  color: #555;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: default;
+  transition: color 0.3s ease, text-shadow 0.3s ease;
+}
+
+/* Glow effect on header titles */
+.goal-row.header > div:hover {
+  color: #7a52c7;
+  text-shadow: 0 0 8px rgba(122, 82, 199, 0.7);
+}
+
+/* Hover effect only on data rows */
+.goal-row:not(.header):hover {
+  background: rgba(210, 153, 235, 0.4);
+  box-shadow: 0 8px 20px rgba(149, 55, 255, 0.3);
+  transform: translateY(-4px) scale(1.02);
+  cursor: pointer;
+}
+
+/* Goal name and date cells styling */
+.goal-name,
+.goal-date {
+  height: 50px;
+  background-color: rgba(214, 174, 234, 0.3);
+  border-radius: 4px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #333;
+  font-weight: 500;
+  padding: 0 10px;
+  font-size: 14px;
+  transition: background-color 0.3s ease, color 0.3s ease;
+  cursor: pointer;
+}
+
+/* Hover effect on goal-name and goal-date */
+.goal-name:hover,
+.goal-date:hover {
+  background-color: rgba(179, 132, 214, 0.5);
+  color: #fff;
+}
+.goal-row.striked {
+  text-decoration: line-through;
+  color: gray;
+  opacity: 0.6;
+  transition: all 0.3s ease;
+}
+.goal-row {
+  transition: opacity 0.5s ease, transform 0.5s ease;
+}
+
+.goal-row.striked {
+  opacity: 0;
+  transform: translateY(-20px);
+  pointer-events: none; /* disables clicking during animation */
+}
+
+/* Optional pressed effect on click */
+.goal-row:active {
+  transform: scale(0.97);
+  transition: transform 0.1s ease;
+}
